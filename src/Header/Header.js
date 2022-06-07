@@ -16,10 +16,6 @@ function Hder() {
                 </ul>
             </div>
         </div>
-
-        <div class="imgHeader">
-            <h1><span>Welcome</span></h1>
-        </div>
     </header>
   
       </div>
