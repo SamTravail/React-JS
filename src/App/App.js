@@ -6,16 +6,13 @@ import './App.css';
 
 export default function App() {
 
-  // const entete = 'titre';
-  // const titre = <h1>Un titre h1</h1>;
 
   return (
       <div className="App">
         {/* Ceci est un commentaire en JSX */}
       <Header />
       <Emoji />
-      {/* <h1 className={entete}>Titre React</h1>
-      {titre} */}
+     
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

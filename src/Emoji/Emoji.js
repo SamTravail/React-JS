@@ -1,62 +1,47 @@
 import './Emoji.css';
 
-// const montrerEmoji =event => alert(event.target.id);
+//declarer la fonction fleche montrerEmoji
+// const montrerEmoji = event => alert(event.target.id);
 
 // export default function Emoji() {
 //     return (
 //         <ul>
 //             <li>
 //                 <button onClick={event => alert(event.target.id)}>
-//                 <span role="omg" id="sourire">😀</span>
+//                 <span role="img" id="sourire">😀</span>
 //                 </button>
 //             </li>
 //             <li>
 //                 <button onClick={montrerEmoji}>
-//                 <span role="omg" id="animal">🦁</span>
+//                 <span role="img" id="animal">🦊</span>
 //                 </button>
 //             </li>
 //             <li>
-//                 <button onClick={event => alert(event.target.id)}>
-//                 <span role="omg" id="nouriture">🍉</span>
+//                 <button>
+//                 <span role="img" id="nourriture">🍉</span>
 //                 </button>
 //             </li>
 //         </ul>
 //     )
 // };
 
+const montrerEmoji = event => alert(event.target.id);
+
 const emojis = [
     {
-    emoji: "😀",
-    name: "sourire"
+        emoji: "😀",
+        name: "sourire"
     },
     {
-    emoji: "🦁",
-    name: "animal"    
+        emoji: "🦊",
+        name: "animal"
     },
     {
         emoji: "🍉",
-        name: "nouriture"    
-        },
+        name: "nourriture"
+    },
 ];
 
-const montrerEmoji =event => alert(event.target.id);
-export default function Emoji() {
-    return(
-        <>
-        <ul>
-            {
-                emojis.map(emoji => (
-                        <li key={emoji.emoji}>
-                            <button onClick={montrerEmoji}>
-                            <span role="img" id={emoji.name}>{emoji.emoji}</span>
-                            </button>
-                        </li>
-                ))
-            }
-        </ul>
-        </>
-    )
-}
 // const planetes = [
 //     "Terre",
 //     "Saturne",
@@ -66,7 +51,26 @@ export default function Emoji() {
 // export default function Emoji() {
 //     return(
 //         <>
-//         {planetes.map(planete => <div key={planete}>{planete}</div>)}
+//             {planetes.map(planete => <div key={planete}>{planete}</div>)}
 //         </>
 //     )
 // }
+
+export default function Emoji() {
+    return (
+        <>
+            <ul>
+                {
+                    emojis.map(emoji => (
+                        <li key={emoji.emoji}>
+                            <button onClick={montrerEmoji}>
+                                <span id={emoji.name}>{emoji.emoji}</span>
+                            </button>
+                        </li>
+                    ))
+                }
+            </ul>
+   
+        </>
+    )
+}
