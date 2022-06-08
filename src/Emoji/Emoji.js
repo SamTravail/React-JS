@@ -48,7 +48,7 @@ export default function Emoji() {
                 emojis.map(emoji => (
                         <li key={emoji.emoji}>
                             <button onClick={montrerEmoji}>
-                            <span role="img" id={emoji.name}>🦁</span>
+                            <span role="img" id={emoji.name}>{emoji.emoji}</span>
                             </button>
                         </li>
                 ))
