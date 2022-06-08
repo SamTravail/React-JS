@@ -1,24 +1,19 @@
 import './Header.css';
+import logo from '../logo.svg';
 
-function Hder() {
+export default function Header() {
     return (
-      <div className="Hder">
-        <header className="Hder-header">
-       
-    
-        <div class="barNav">
-            <div class="logo"><span>Menu</span>Nav</div>
-            <div class="navigation">
-                <ul>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+        <header className='header'>
+            <div className='logo'>
+                <img src={logo} className='logoHeader' />
             </div>
-        </div>
-    </header>
-  
-      </div>
-    );
-  }
-  export default Hder;
+            <nav>
+                <ul className='menuHeader'>
+                    <li><a href="">Lien 1</a></li>
+                    <li><a href="">Lien 2</a></li>
+                    <li><a href="">Lien 3</a></li>
+                </ul>
+            </nav>
+        </header>
+    )
+};

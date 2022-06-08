@@ -1,0 +1,1 @@
+- creer un composant Footer qui devra afficher le nom de votre comapgnie et le logo copygright

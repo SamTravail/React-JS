@@ -1,13 +1,25 @@
-import logo from './logo.svg';
+import Emoji from '../Emoji/Emoji';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
+import logo from '../logo.svg';
 import './App.css';
 
-function App() {
+export default function App() {
+
+  // const entete = 'titre';
+  // const titre = <h1>Un titre h1</h1>;
+
   return (
-    <div className="App">
+      <div className="App">
+        {/* Ceci est un commentaire en JSX */}
+      <Header />
+      <Emoji />
+      {/* <h1 className={entete}>Titre React</h1>
+      {titre} */}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -18,7 +30,8 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+      <Footer />
+      </div>
   );
 }
-export default App;
+
