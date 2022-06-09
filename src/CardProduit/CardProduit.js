@@ -4,7 +4,6 @@ export default function CardProduit(props) {
     return (
        
         <div className='cardP'>
-             <h1>Card Produit</h1>
             <figure>
             <img className='imgCard' src={props.image}></img>
             <figcaption>

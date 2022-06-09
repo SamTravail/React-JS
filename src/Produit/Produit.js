@@ -73,7 +73,11 @@ export default function Produit() {
             star={produit.star}
             />
     ))
-    return <div><div className='cardCont'>{listeProduits}</div><div className='cardCont'>{listeProduits}</div></div>;
+    return <div>
+      <h1>Produits Connectés</h1>
+      <div className='cardCont'>{listeProduits}</div>
+      <div className='cardCont'>{listeProduits}</div>
+      </div>;
 
 }
 
