@@ -69,15 +69,6 @@ export default function Produit() {
             avis={produit.avis}
             />
     ))
-    return listeProduits;
+    return <div className='cardCont'>{listeProduits}</div>;
 }
 
-//   <figure>
-//     <img src="" >
-//     <figcaption>
-//        <h3>titre</h3>
-//        <p>description</p>
-//        <h4>prix</h4>
-//        <h5>avis</h5>
-//     </figcaption>
-//   </figure>

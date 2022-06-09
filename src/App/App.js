@@ -13,12 +13,9 @@ export default function App() {
 
   return (
       <div className="App">
-        {/* Ceci est un commentaire en JSX */}
       <Header />
       <Emoji />
-      {/* <h1 className={entete}>Titre React</h1>
-      {titre} */}
-      <Produit />
+      <Produit className="cardProduit" />
       <Message messagePasse="Hello you les reacteux !" prenom="Katy"/>
       <Message messagePasse="La planete bleu." prenom="Sandy"/>
       <Message messagePasse="Stop avec tes messages pourris !" prenom="billy"/>
