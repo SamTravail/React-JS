@@ -37,7 +37,8 @@ const produits = [
       titre: 'Echo Dot',
       prix: '30€',
       description: 'Enceinte Bluetooth compacte avec Alexa | Son riche et puissant | Anthracite ',
-      avis: 450
+      avis: 450,
+      star: '🌟⭐⭐⭐⭐'
     },
     {
       image: 'https://live.staticflickr.com/1701/24066310330_b7bfcd0c0a_n.jpg',
@@ -45,7 +46,8 @@ const produits = [
       titre: 'Fire TV',
       prix: '70€',
       description: 'Tuner TV usb',
-      avis: 784120
+      avis: 784120,
+      star: '🌟🌟🌟🌟⭐'
     },
     {
       image:
@@ -54,7 +56,8 @@ const produits = [
       titre: 'Fitbit Versa ',
       prix: '120€',
       description: 'Montre connecté',
-      avis: 4125
+      avis: 4125,
+      star: '🌟🌟🌟⭐⭐'
     },
   ];
 
@@ -67,8 +70,10 @@ export default function Produit() {
             titre={produit.titre}
             description={produit.description}
             avis={produit.avis}
+            star={produit.star}
             />
     ))
-    return <div className='cardCont'>{listeProduits}</div>;
+    return <div><div className='cardCont'>{listeProduits}</div><div className='cardCont'>{listeProduits}</div></div>;
+
 }
 
