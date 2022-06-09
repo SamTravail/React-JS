@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import Hder from './Header/Header'
+
+
+// Importation des composants
 import App from './App/App';
-import Foot from './Foot/Foot';
+
+// Importation des css
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <Hder />
-    <App />
-    <Foot />
+     <App />
   </React.StrictMode>
 );
+
+
