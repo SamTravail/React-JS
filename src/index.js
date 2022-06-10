@@ -26,7 +26,7 @@ root.render(
           </Route>
         </Routes> 
       </BrowserRouter>
-     
+    
       {/* <Header />
       <Emoji />
       <Produit />
@@ -35,6 +35,7 @@ root.render(
       <Message messagePasse="Stop avec tes messages pourris !" prenom="billy"/>
       <Contenu />
       <Footer /> */}
+      <Footer />
   </React.StrictMode>
 );
 
