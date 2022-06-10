@@ -1,0 +1,11 @@
+.posts {
+   background-color: rgba(123, 123, 122, 0.365);
+}
+
+.posts p {
+    text-align: justify;
+}
+.posts h4 {
+   
+text-align: center;
+}
