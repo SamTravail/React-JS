@@ -3,7 +3,9 @@ import "./Contenu.css";
 import logo from "../logo.svg";
 import Modal from "../Modal/Modal";
 
-export default function Contenu({ initialCount }) {
+const initialCount = 0;
+
+export default function Contenu() {
   const [count, setCount] = useState(initialCount);
   const [show, setShow] = useState(false);
 
@@ -21,7 +23,7 @@ export default function Contenu({ initialCount }) {
         </div>
         <div className="compteur">
           Total : {count}
-          <button onClick={() => setCount(0)}>Réinitialiser</button>
+          <button onClick={() => setCount(initialCount)}>Réinitialiser</button>
           <button onClick={() => setCount((prevCount) => prevCount - 1)}>
             -
           </button>
