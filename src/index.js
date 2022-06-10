@@ -10,6 +10,7 @@ import Header from './Header/Header';
 import Contact from './Contact/Contact';
 import Produit from './Produit/Produit';
 import Layout from './Layout/Layout';
+import Posts from './Posts/Posts';
 
 import './index.css';
 
@@ -23,6 +24,7 @@ root.render(
             <Route path='contenu' element={<Contenu />} />
             <Route path='contact' element={<Contact />} />
             <Route path='produit' element={<Produit />} />
+            <Route path='posts' element={<Posts />} />
           </Route>
         </Routes> 
       </BrowserRouter>

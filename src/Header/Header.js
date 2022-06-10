@@ -20,7 +20,10 @@ export default function Header() {
                     </li>
                     <li>
                         <Link to="/contact">Contect</Link>
-                    </li>   
+                    </li>  
+                    <li>
+                        <Link to="/posts">Posts</Link>
+                    </li>  
                 </ul>
             </nav>
             <Outlet />
