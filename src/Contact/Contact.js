@@ -10,8 +10,14 @@ const[name, setName] = useState("");
 const[prenom, setPrenom] = useState("");
 const[mail, setMail] = useState("");
 const [textarea, setTextarea] = useState("Saisissez votre commentaire.");
-const select = (event) => {
-  setSelect(event.target.value);
+const[jour, setJour] = useState("Lundi");
+
+const handleJour = (event) => {
+  setJour (event.target.value);
+}
+
+const selectText = (event) => { 
+  setTextarea(event.target.value);
 }
 
 
@@ -19,17 +25,17 @@ const handleChange = (event) => {
   setTextarea(event.target.value);
 }
 
-// console.log(textarea);
-
 const validation = (event) => {
   event.preventDefault();
-  alert(`Vous etes : ${prenom} ${name} , votre email : ${mail}`);
+  alert(`Vous etes : ${prenom} ${name} , votre email : ${mail} , votre message : ${textarea} , nous somme le : ${jour}`);
 };
 
 
 console.log("name :", name);
 console.log("prenom :", prenom);
 console.log("mail :", mail);
+console.log("text :", textarea);
+console.log("jour :", jour);
 
 
   return (
@@ -63,7 +69,7 @@ console.log("mail :", mail);
 
         <label>
           Jours de la semaine :
-        <select>
+        <select value={jour} onChange={handleJour}>
           <option value="lundi">Lundi</option>
           <option value="mardi">Mardi</option>
           <option value="mercredi">Mercredi</option>
@@ -75,7 +81,7 @@ console.log("mail :", mail);
         </label>
         <input type="submit"></input>
 
-         
+        <input type="range" class="form-range" id="customRange1"></input>
         
       </form>
     </div>
