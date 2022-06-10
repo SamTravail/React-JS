@@ -11,6 +11,7 @@ import Contact from './Contact/Contact';
 import Produit from './Produit/Produit';
 import Layout from './Layout/Layout';
 import Posts from './Posts/Posts';
+import NotFound from './NotFound/NotFound';
 
 import './index.css';
 
@@ -25,6 +26,7 @@ root.render(
             <Route path='contact' element={<Contact />} />
             <Route path='produit' element={<Produit />} />
             <Route path='posts' element={<Posts />} />
+            <Route path="*" element={<NotFound/>} />
           </Route>
         </Routes> 
       </BrowserRouter>
